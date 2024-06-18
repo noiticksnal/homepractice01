@@ -1,0 +1,261 @@
+*{ padding:0;
+  box-sizing: border-box;
+}
+
+
+header{
+    widht: 100%;
+    padding: 10px 0px;
+}
+
+.container{
+    width:1140px;
+    margin:auto;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btns{
+    display:flex;
+    padding: 10px 10px;
+    margin: 0 auto;
+    background: blue;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    border: 25px solid;
+}
+
+.menu-box{
+    display: flex;
+    align-items: center;
+}
+
+.logo, .btns{
+    flex-basis:20%;
+    
+}
+
+.logo a img{
+    width: 175px;
+}
+.menu{
+    flex-basis: 60%;
+}
+
+.menu ul{
+    margin:0;
+    padding:0;
+}
+
+.menu ul li{
+  list-style-type: none;
+  display: inline-block;
+  margin-right: 10px;
+  font-size: 16px;
+  color: #0e72cc;
+}
+
+
+
+.form-section{
+    
+    width: 100%;
+    background-color:blue;
+    height: 100vh;
+}
+.form-section:hover{
+    background-color: aqua;
+    transition: 0.8s;
+}
+
+
+.form-box{
+    margin-top: 80px;
+  width: 900px;
+  height: 70vh;
+ background-color:white;
+ display: flex;   
+}
+
+.left-side, .right-side{
+  flex-basis: 50%;
+}
+.left-side{
+    background: url(../img/cc.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+.right-side{
+padding: 5px 50px;
+margin-bottom: 15px;
+}
+
+input, select, textarea{
+    width: 100%;
+    padding: 8px;
+    margin: 4px 0;
+    background-color: white;
+}
+.right-side h1{
+text-align: center;
+margin-bottom: 10px;
+margin-top: 0px;
+}
+.right-side form{
+    padding: auto;
+    margin-bottom: 2px;
+    margin-top: 2px;
+    }
+.name input{
+    width: 49.1%;
+    }
+.name .first-name{
+    margin-right: 2px;
+  }
+.condition input{
+    width: auto;
+}
+.condition span{
+    margin-bottom: 5px;
+   }
+input::placeholder, textarea::placeholder{
+font-family: poppins;
+}
+select{
+font-family: poppins;
+}
+
+/*************************
+****     Global CSS    ****
+**************************/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+body{
+    font-family: "Open Sans", sans-serif;
+}
+h1{text-align: center;
+margin-top: 10px;
+}
+
+h2{text-align: center;
+    margin-top:  40px;
+    font-size: 50px;
+    font-style: bold;
+    }
+
+   
+a, a:hover{
+    text-decoration: none;
+}
+
+.social-media{
+text-align: center;
+margin-top: 10px;
+position: fixed;
+left: -190px;
+transition: 0.8s;
+}
+
+.social-media:hover{
+    left: 0px;
+    transition: 0.8s;
+}
+
+.social-media ul li{
+list-style-type: none;
+display:inline-block;
+border: 1px solid blue;
+background-color:aqua;
+width: 60px;
+height: 60px;
+text-align: center;
+line-height: 62px;
+border-radius: 2px 10px;
+transition: 0.6s;
+}
+.social-media ul li:hover{
+transition: 0.6s;
+}
+
+.social-media ul li i{
+color: blue;
+font-size: 25px;
+}
+
+.social-media ul li:hover i{
+    transition: 0.6s;
+    transform:rotate(360deg)
+    }
+
+.main-box{
+    position:relative;
+background-color: blue;
+width: 700px;
+height: 700px;
+}
+
+.child-box{
+    position:absolute;
+    bottom: 48px;
+background-color: red;
+width: 200px;
+height: 200px;
+}
+.demo{
+    height: 200vh;
+    background-color: yellowgreen;
+}
+
+.green{
+    transition: 0.6s;
+    height: 400px;
+    width: 700px;
+    background-color: green;
+    margin: 50px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position:relative;
+}
+
+.red{
+   height: 250px;
+   width: 250px;
+   background-color: red;
+   border-radius: 50%; 
+   display: flex;
+   justify-content: center;
+   align-items:center;
+}
+.red img{
+    transition: 0.6s;
+    color:aqua;
+    height: 200px;
+    width: 200px;
+}
+.red:hover img{
+    color:aqua;
+    transition: 0.6s;
+    transform:rotate(360deg)
+}
+
+.green h1{
+    transition: 0.6s;
+    position: absolute;
+    top: 82%;
+    left: 34%;
+}
+
+.green:hover h1{
+    color: red;
+    transition: 0.6s;
+    transform: rotate(360deg)
+}
+
+.green:hover{
+    color: darkgreen;
+    transition: 0.6s;
+    transform: rotate(360deg)
+}
